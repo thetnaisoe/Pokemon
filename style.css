@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #669da3;
+    background-color: #467075;
 }
 
 .header h1{
@@ -26,26 +26,415 @@
     gap: 50px;
 }
 
-.nav-links ul li a{
+.nav-links ul li a,
+.nav-links ul li{
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
-.card-container {   
+.card-container-whole {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 100px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 230px;
+    margin-bottom: 15px;
+}
+
+
+.card {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buy-button-container {
+    text-align: center;
+}
+
+.buy-button{
+    display: block;
+    width: 88%;
+    padding: 10px;
+    background-color: #467075; /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.buy-button p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 210px;
+    object-fit: cover;
+}
+.card-body {
+    margin-top: 10px;
+}
+
+.card-attributes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-attributes p {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+.card-price{
+    padding: 15px;
+    background-color: #467075;
+    color: white;
+    text-align: center;
+}
+.card h5{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #467075;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card-body .card-title, .card-body .card-type{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-body .card-type{
+    color: grey;
+    font-style: italic;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.filter-container form {
+    display: flex;
+    align-items: center;
+}
+
+.filter-container select {
+    padding: 5px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.filter-container input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #467075; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-random-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-random{
+    padding: 10px 15px;
+    background-color: #467075; /* Green background */
+    text-align: center;
+    text-decoration: none;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 260px;
+}
+
+.buy-random p, .buy-random a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+/* Card Details */
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.details p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(96, 77, 77);
+}
+
+.details h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(96, 77, 77);
+    text-decoration: underline;
+}
+
+/* Register */
+
+.background{
+    background-color: #467075;
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register {
+    width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.register h1 {
+    color: #467075;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register input[type="text"],
+.register input[type="password"] {
+    padding: 15px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.register button {
+    padding: 15px;
+    background-color: #467075;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register button:hover {
+    background-color: #4cae4c;
+}
+
+.register p{
+    color: #467075;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* User */
+
+.user {
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.user p{
+    font-size: 20px;
+    color: rgb(96, 77, 77);
+    padding: 15px;
+}
+
+.user h2, .user h1{
+    padding: 10px;
+    color: rgb(96, 77, 77);
+    text-decoration: underline;
+}
+
+.user h2{
+    margin-bottom: 15px;
+}
+
+.usercard{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0px;
-    padding: 10px 250px;
+    gap: 10px;
+    
 }
 
-.card-container img {
-    flex: 0 0 20%;
-    margin: 0px;
-    padding: 10px 1px;
-    box-sizing: border-box;
-    height: auto;
+.card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.card-item button{
+    margin-top: 10px;
+    padding: 0px 80px;
+    background-color: #467075;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-item .card .card-body .card-title{
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.card-item .card .card-body .card-type{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.card-item .card .card-body .card-type p{
+    color: grey;
+    font-style: italic;
+}
+
+.card-item .card .card-body .card-attributes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item .card .card-body .card-attributes p{
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+.card-item .card .card-body .card-price{
+    padding: 15px;
+    background-color: #467075;
+    color: white;
+    text-align: center;
+}
+
+.card-item button p{
+    color: white;
+    font-size: 15px;
+}
+
+.card-item p{
+    color: black;
+    font-size: 18px;
+}
+
+
+/* Create Card Form */
+
+.create {
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.create form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create h1 {
+    color: #467075;
+    text-align: center;
+    
+}
+
+.create label {
+    color: #467075;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.create input[type="text"], .create input[type="number"] {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#description{
+    padding: 15px;
+    border: 1px solid #b0adad;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.create button {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #467075;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+}
+.create button:hover {
+    background-color: #4cae4c;
+}
 

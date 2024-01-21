@@ -1,0 +1,35 @@
+{
+    "65a30f7baf027": {
+        "fullname": "Soe Thet Naing",
+        "email": "tnsoe1915@gmail.com",
+        "password": "abcd",
+        "money": 1000,
+        "id": "65a30f7baf027",
+        "cards": [
+            "65a59bf7c5d7f",
+            "card3",
+            "card0",
+            "card4",
+            "65a6aa2bce109"
+        ]
+    },
+    "65a30f96af033": {
+        "fullname": "Myat Thu Moe Myint",
+        "email": "moemyintmyatthu26@gmail.com",
+        "password": "abcd",
+        "money": 1000,
+        "id": "65a30f96af033",
+        "cards": [
+            "card8",
+            "card9",
+            "card5",
+            "card2",
+            "card1"
+        ]
+    },
+    "65a47c5f8f433": {
+        "fullname": "admin",
+        "password": "admin",
+        "id": "65a47c5f8f433"
+    }
+}
