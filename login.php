@@ -54,7 +54,7 @@
             }
         ?>
         </div>
-        <form action="login.php" method="POST">
+        <form action="login.php" method="POST" novalidate>
             <p>Full Name: </p> <input type="text" name="fullname" value="<?= $fullname ?>">
 
             <br>

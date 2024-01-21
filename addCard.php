@@ -69,7 +69,7 @@
                 }
             ?>
         </div>
-        <form action="addCard.php" method="post">
+        <form action="addCard.php" method="post" novalidate>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" value="<?= $name ?>">
             <label for="type">Type:</label>

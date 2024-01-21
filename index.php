@@ -42,7 +42,7 @@ $colors = [
     </section>
 
     <section class="filter-container">
-        <form method="GET" action="index.php">
+        <form method="GET" action="index.php" novalidate>
             <select name="type">
                 <option value="" <?= (!isset($_GET['type']) || $_GET['type'] === '') ? 'selected' : '' ?>>All</option>
                 <?php foreach ($colors as $type => $color): ?>

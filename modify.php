@@ -70,7 +70,7 @@
                 }
             ?>
         </div>
-        <form action="modify.php?id=<?= $id ?>" method="post">
+        <form action="modify.php?id=<?= $id ?>" method="post" novalidate>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" value="<?= $name ?>">
             <label for="type">Type:</label>
